@@ -6,8 +6,9 @@ public class Demo {
 
 	public static void main(String[] args) {
 	
-		TopNews news = new TopNews("aust open");
+		TopNews news = TopNews.getTopNews();
 		news.printNews();
+		
 		
 	}
 	
