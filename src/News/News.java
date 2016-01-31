@@ -1,12 +1,16 @@
 package News;
 
 import java.time.LocalDateTime;
+import java.util.List;
+
+import Comments.Comment;
 
 public abstract class News {
 
 	protected static final int TITLE_LENGTH = 20;
 	protected String title;
 	protected String text;
+	protected List <Comment> comments;
 	
 	// image
 	
