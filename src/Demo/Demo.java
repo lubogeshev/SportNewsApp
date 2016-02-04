@@ -1,5 +1,6 @@
 package Demo;
 
+import Comments.Comment;
 import News.TopNews;
 
 public class Demo {
@@ -8,7 +9,9 @@ public class Demo {
 	
 		TopNews news = TopNews.getTopNews();
 		news.printNews();
+		Comment comment = new Comment("","");
 		
+		System.out.println(comment.getCommentedOn());
 		
 	}
 	
