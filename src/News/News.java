@@ -11,10 +11,9 @@ public abstract class News {
 	protected String title;
 	protected String text;
 	protected List <Comment> comments;
-	
+	private final LocalDateTime releasedOn = LocalDateTime.now().withNano(0);
 	// image
 	
-	private final LocalDateTime releasedOn = LocalDateTime.now();
 
 	public News() {
 		
@@ -35,7 +34,7 @@ public abstract class News {
 	}
 
 	// public News(String title, String text, IMAGE) {
-
+	
 	public void printNews(){
 		System.out.println(this.getTitle() + "\n" + this.getText() + "\n" + this.releasedOn);
 	}
