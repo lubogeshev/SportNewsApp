@@ -12,6 +12,13 @@ public class Comment {
 		this.author = author;
 		this.text = text;
 	}
+	
+	
+	@Override
+	public String toString() {
+		return author + " : " + text + " \n " + commentedOn;
+	}
+
 
 	public LocalDateTime getCommentedOn() {
 		return commentedOn;
