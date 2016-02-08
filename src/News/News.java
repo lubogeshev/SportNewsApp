@@ -18,7 +18,6 @@ public abstract class News {
 
 	public enum Category {
 		FOOTBALL, BASKETBALL, VOLLEYBALL, TENNIS, SNOOKER, MOTOR, OTHER;
-
 	}
 
 	public News(String text, Category category) {
@@ -40,9 +39,13 @@ public abstract class News {
 	}
 
 	// public News(String title, String text, Category category IMAGE) {
-	
+
 	public String showNews() {
 		return this.getTitle() + "\n" + this.getText() + "\n" + this.category.name() + "\n" + this.releasedOn;
+	}
+
+	public  List<Comment> showComments() {
+		return this.comments;
 	}
 
 	public void addComment(Comment comment) {
