@@ -1,16 +1,18 @@
 package Administrator;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import News.News;
-import News.TopNews;
 import News.News.Category;
+import News.TopNews;
 
 public abstract class NewsManager {
 
 	private List<News> allNews = new ArrayList<News>();
-	private static List<Admin> admins = new ArrayList<Admin>();
+	private static Set<Admin> admins = new HashSet<Admin>();
 	private TopNews top;
 
 	public void addNews(News news) {
@@ -40,7 +42,7 @@ public abstract class NewsManager {
 		}
 	}
 
-	public static List<Admin> getAdmins() {
+	public static Set<Admin> getAdmins() {
 		return admins;
 	}
 
