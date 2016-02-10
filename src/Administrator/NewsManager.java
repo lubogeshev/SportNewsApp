@@ -12,7 +12,6 @@ import News.TopNews;
 public abstract class NewsManager {
 
 	private List<News> allNews = new ArrayList<News>();
-	private static Set<Admin> admins = new HashSet<Admin>();
 	private TopNews top;
 
 	public void addNews(News news) {
@@ -40,10 +39,6 @@ public abstract class NewsManager {
 				news.showNews();
 			}
 		}
-	}
-
-	public static Set<Admin> getAdmins() {
-		return admins;
 	}
 
 	public List<News> getAllNews() {

@@ -12,7 +12,7 @@ public class Admin {
 
 	public static void registerAsAdmin(String name, String password1, String password2) {
 		if (verifyPassword(password1, password2)) {
-			NewsManager.getAdmins().add(new Admin(name, password1));
+			AdminManager.getAdmins().add(new Admin(name, password1));
 		}
 	}
 
